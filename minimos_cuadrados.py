@@ -12,7 +12,7 @@ x_vals = X.flatten()
 y_vals = y.flatten()
 
 # ---------------------------------------------------------
-# 2. El Algoritmo OLS desde Cero
+# Regresión lineal OLS
 # ---------------------------------------------------------
 
 # Paso A: Calcular los promedios (x̄ y ȳ)
@@ -34,7 +34,7 @@ beta_1 = numerator / denominator
 beta_0 = y_mean - (beta_1 * x_mean)
 
 # ---------------------------------------------------------
-# 3. Resultados y Predicción
+# Resultados y Predicción
 # ---------------------------------------------------------
 
 print(f"La Intersección (beta_0) calculada es: {beta_0:.4f}")
@@ -45,12 +45,12 @@ print(f"\nLa ecuación de la recta es: y = {beta_0:.2f} + {beta_1:.2f}x")
 y_pred = beta_0 + beta_1 * x_vals
 
 # ---------------------------------------------------------
-# 4. Visualización
+# Visualización
 # ---------------------------------------------------------
 plt.scatter(x_vals, y_vals, color='blue', alpha=0.5, label='Datos Reales')
 plt.plot(x_vals, y_pred, color='red', linewidth=2, label='Línea de Regresión (OLS)')
-plt.xlabel('Variable X (Input)')
-plt.ylabel('Variable Y (Output)')
+plt.xlabel('Variable X (independiente)')
+plt.ylabel('Variable Y (dependiente)')
 plt.legend()
-plt.title('Regresión Lineal OLS desde Cero')
+plt.title('Regresión Lineal OLS')
 plt.show()
