@@ -8,7 +8,7 @@ Para un conjunto de datos con $\eta$ observaciones, tenemos una variable indepen
 
 $$
 \begin{equation}
-    y_i = \beta_0 + \beta_1 x  _i + \varepsilon_i
+    y_i = \beta_0 + \beta_1 x_i + \varepsilon_i
 \end{equation}
 $$
 
@@ -183,6 +183,8 @@ $$
 Estas propiedades se pueden probar simplemente expandiendo las expresiones de la izquierda.
 
 ----
+
+Llegamos a la solución cerrada para la pendiente $\beta_1$
 
 $$
 \begin{equation}
